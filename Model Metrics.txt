@@ -1,0 +1,52 @@
+Model Metrics:
+
+Model A: CatBoost
+Consist of 18 separate models each specific to a location.
+BASEL	   :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.5498333970256230}
+BUDAPEST   :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.7565483993004134}
+DE BILT    :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.4653295859237690}
+DRESDEN    :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.9099678261876785}
+DUSSELDORF :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.8215849480163400}
+HEATHROW   :	 {'depth': 6, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 0.9914044560728270}
+KASSEL     :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.7075062871487685}
+LJUBLJANA  :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.7927203476736089}
+MAASTRICHT :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.6961076981092995}
+MALMO      :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.7624569561475458}
+MONTELIMAR :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.6489810636458575}
+MUENCHEN   :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.6133816325241763}
+OSLO 	   :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.7542254155670305}
+PERPIGNAN  :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.8999637932036504}
+ROMA 	   :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.2882818728066083}
+SONNBLICK  :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.8876588305465676}
+STOCKHOLM  :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.8248672660656555}
+TOURS 	   :	 {'depth': 4, 	'iterations': 200, 	'learning_rate': 0.1 }		{'RMSE': 1.7730659317155717}
+
+Mean and standard deviation of RMSE for training set: 	{1.6746603170703755, 0.22626144165075720}
+Mean and standard deviation of RMSE for testing set: 	{1.9219318763821436, 0.17102352810795002}
+Mean and standard deviation of cross validations: 	{0.9185991491203664, 0.01944804193727662}
+
+
+Model B: LightGBM
+Consist of 18 separate models each specific to a location.
+BASEL	   :	(learning_rate = 0.01, 	max_depth = -1,	n_estimators = 500, 	num_leaves = 10 )
+BUDAPEST   :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 10 )
+DE BILT	   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 5  )
+DRESDEN	   :	(learning_rate = 0.01, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 100)
+DUSSELDORF :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 100)
+HEATHROW   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 5  )
+KASSEL	   :	(learning_rate = 0.1, 	max_depth = 10, n_estimators = 100, 	num_leaves = 5  )
+LJUBLJANA  :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 200, 	num_leaves = 10 )
+MAASTRICHT :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 5  )
+MALMO	   :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 100)
+MONTELIMAR :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 500, 	num_leaves = 100)
+MUENCHEN   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 30 )
+OSLO	   :	(learning_rate = 0.1, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 10 )
+PERPIGNAN  :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 200, 	num_leaves = 10 )
+ROMA	   :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 100)
+SONNBLICK  :	(learning_rate = 0.01, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 30 )
+STOCKHOLM  :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 100)
+TOURS	   :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 50 )
+
+Mean and standard deviation of RMSE for training set: 	(1.7093685534867753, 0.19297445192160300)
+Mean and standard deviation of RMSE for testing set: 	(1.9288062896766358, 0.17899232406025684)
+Mean and standard deviation of cross validations: 	(0.9180053284299741, 0.01987337934091608)
