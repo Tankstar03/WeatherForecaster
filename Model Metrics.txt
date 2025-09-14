@@ -1,52 +1,56 @@
 Model Metrics:
 
 Model A: CatBoost
-Consist of 18 separate models each specific to a location.
-BASEL	   :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.5498333970256230}
-BUDAPEST   :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.7565483993004134}
-DE BILT    :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.4653295859237690}
-DRESDEN    :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.9099678261876785}
-DUSSELDORF :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.8215849480163400}
-HEATHROW   :	 {'depth': 6, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 0.9914044560728270}
-KASSEL     :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.7075062871487685}
-LJUBLJANA  :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.7927203476736089}
-MAASTRICHT :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.6961076981092995}
-MALMO      :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.7624569561475458}
-MONTELIMAR :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.6489810636458575}
-MUENCHEN   :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.6133816325241763}
-OSLO 	   :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.7542254155670305}
-PERPIGNAN  :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.8999637932036504}
-ROMA 	   :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.2882818728066083}
-SONNBLICK  :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'RMSE': 1.8876588305465676}
-STOCKHOLM  :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'RMSE': 1.8248672660656555}
-TOURS 	   :	 {'depth': 4, 	'iterations': 200, 	'learning_rate': 0.1 }		{'RMSE': 1.7730659317155717}
+Consist of 18 separate models each specific to a location.					Train		Test			Train		Test
+BASEL	   :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.95647, 	0.93133, 	'RMSE': 1.54983,	1.92706}
+BUDAPEST   :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.96023, 	0.94523, 	'RMSE': 1.75654,	1.97503}
+DE BILT    :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.94378, 	0.91402, 	'RMSE': 1.46532,	1.82603}
+DRESDEN    :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.94194, 	0.92036, 	'RMSE': 1.90996,	2.13132}
+DUSSELDORF :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.92599, 	0.91557, 	'RMSE': 1.82158,	1.93254}
+HEATHROW   :	 {'depth': 6, 	'iterations': 500, 	'learning_rate': 0.05}		{'R^2': 0.96883, 	0.93345, 	'RMSE': 0.99140,	1.43863}
+KASSEL     :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.94367, 	0.92155, 	'RMSE': 1.70750,	2.02678}
+LJUBLJANA  :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'R^2': 0.95309, 	0.93672, 	'RMSE': 1.79272,	2.04234}
+MAASTRICHT :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.93429, 	0.90200, 	'RMSE': 1.69610,	2.04790}
+MALMO      :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.93577, 	0.92902, 	'RMSE': 1.76245,	1.77425}
+MONTELIMAR :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'R^2': 0.94805, 	0.92647, 	'RMSE': 1.64898,	1.90362}
+MUENCHEN   :	 {'depth': 10, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.95885, 	0.92958, 	'RMSE': 1.61338,	2.04125}
+OSLO 	   :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'R^2': 0.95237, 	0.94363, 	'RMSE': 1.75422,	1.84831}
+PERPIGNAN  :	 {'depth': 6, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.91433, 	0.89490, 	'RMSE': 1.89996,	2.07946}
+ROMA 	   :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'R^2': 0.96522, 	0.94793, 	'RMSE': 1.28828,	1.60747}
+SONNBLICK  :	 {'depth': 8, 	'iterations': 200, 	'learning_rate': 0.05}		{'R^2': 0.92683, 	0.91132, 	'RMSE': 1.88765,	2.08744}
+STOCKHOLM  :	 {'depth': 4, 	'iterations': 500, 	'learning_rate': 0.05}		{'R^2': 0.94756, 	0.92856, 	'RMSE': 1.82486,	1.93302}
+TOURS 	   :	 {'depth': 4, 	'iterations': 200, 	'learning_rate': 0.1 }		{'R^2': 0.92578, 	0.90177, 	'RMSE': 1.77306,	1.97223}
 
-Mean and standard deviation of RMSE for training set: 	{1.6746603170703755, 0.22626144165075720}
-Mean and standard deviation of RMSE for testing set: 	{1.9219318763821436, 0.17102352810795002}
-Mean and standard deviation of cross validations: 	{0.9185991491203664, 0.01944804193727662}
+Mean and standard deviation of R-squared for training set: 	{0.94461, 0.01467}
+Mean and standard deviation of R-squared for testing set: 	{0.92408, 0.01485}
+Mean and standard deviation of RMSE for training set: 		{1.67466, 0.22626}
+Mean and standard deviation of RMSE for testing set: 		{1.92193, 0.17102}
+Mean and standard deviation of cross validations: 		{0.91859, 0.01944}
 
 
 Model B: LightGBM
-Consist of 18 separate models each specific to a location.
-BASEL	   :	(learning_rate = 0.01, 	max_depth = -1,	n_estimators = 500, 	num_leaves = 10 )
-BUDAPEST   :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 10 )
-DE BILT	   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 5  )
-DRESDEN	   :	(learning_rate = 0.01, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 100)
-DUSSELDORF :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 100)
-HEATHROW   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 5  )
-KASSEL	   :	(learning_rate = 0.1, 	max_depth = 10, n_estimators = 100, 	num_leaves = 5  )
-LJUBLJANA  :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 200, 	num_leaves = 10 )
-MAASTRICHT :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 5  )
-MALMO	   :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 100)
-MONTELIMAR :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 500, 	num_leaves = 100)
-MUENCHEN   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 30 )
-OSLO	   :	(learning_rate = 0.1, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 10 )
-PERPIGNAN  :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 200, 	num_leaves = 10 )
-ROMA	   :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 100)
-SONNBLICK  :	(learning_rate = 0.01, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 30 )
-STOCKHOLM  :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 100)
-TOURS	   :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 50 )
+Consist of 18 separate models each specific to a location.							Train		Test			Train		Test
+BASEL	   :	(learning_rate = 0.01, 	max_depth = -1,	n_estimators = 500, 	num_leaves = 10 )	('R^2': 0.94793,	0.93143,	'RMSE': 1.69496,	1.92563)
+BUDAPEST   :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 10 )	('R^2': 0.95643, 	0.94437,	'RMSE': 1.83844,	1.99051)
+DE BILT	   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 5  )	('R^2': 0.94641, 	0.91159,	'RMSE': 1.43072,	1.85161)
+DRESDEN	   :	(learning_rate = 0.01, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 100)	('R^2': 0.94607, 	0.91677,	'RMSE': 1.84082,	2.17884)
+DUSSELDORF :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 100)	('R^2': 0.94073, 	0.91567,	'RMSE': 1.63014,	1.93134)
+HEATHROW   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 5  )	('R^2': 0.96117, 	0.93283,	'RMSE': 1.10647,	1.44537)
+KASSEL	   :	(learning_rate = 0.1, 	max_depth = 10, n_estimators = 100, 	num_leaves = 5  )	('R^2': 0.94005, 	0.91943,	'RMSE': 1.76158,	2.05400)
+LJUBLJANA  :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 200, 	num_leaves = 10 )	('R^2': 0.95319, 	0.93747,	'RMSE': 1.79068,	2.03023)
+MAASTRICHT :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 5  )	('R^2': 0.92165, 	0.90098,	'RMSE': 1.85215,	2.05851)
+MALMO	   :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 100)	('R^2': 0.93751, 	0.93062,	'RMSE': 1.73841,	1.75414)
+MONTELIMAR :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 500, 	num_leaves = 100)	('R^2': 0.95254, 	0.92405,	'RMSE': 1.57596,	1.93470)
+MUENCHEN   :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 30 )	('R^2': 0.95377, 	0.93072,	'RMSE': 1.70998,	2.02473)
+OSLO	   :	(learning_rate = 0.1, 	max_depth = 5,  n_estimators = 100, 	num_leaves = 10 )	('R^2': 0.94858, 	0.94388,	'RMSE': 1.82263,	1.84435)
+PERPIGNAN  :	(learning_rate = 0.05, 	max_depth = 5,  n_estimators = 200, 	num_leaves = 10 )	('R^2': 0.92362, 	0.89339,	'RMSE': 1.79399,	2.09431)
+ROMA	   :	(learning_rate = 0.05, 	max_depth = 3,  n_estimators = 200, 	num_leaves = 100)	('R^2': 0.96201, 	0.94749,	'RMSE': 1.34639,	1.61421)
+SONNBLICK  :	(learning_rate = 0.01, 	max_depth = 5,  n_estimators = 500, 	num_leaves = 30 )	('R^2': 0.92642, 	0.90875,	'RMSE': 1.89292,	2.11750)
+STOCKHOLM  :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 100)	('R^2': 0.94392, 	0.93107,	'RMSE': 1.88725,	1.89885)
+TOURS	   :	(learning_rate = 0.1, 	max_depth = 3,  n_estimators = 100, 	num_leaves = 50 )	('R^2': 0.92477, 	0.90286,	'RMSE': 1.78505,	1.96124)
 
-Mean and standard deviation of RMSE for training set: 	(1.7093685534867753, 0.19297445192160300)
-Mean and standard deviation of RMSE for testing set: 	(1.9288062896766358, 0.17899232406025684)
-Mean and standard deviation of cross validations: 	(0.9180053284299741, 0.01987337934091608)
+Mean and standard deviation of R-squared for training set: 	(0.94382, 0.01222)
+Mean and standard deviation of R-squared for testing set: 	(0.92338, 0.01513)
+Mean and standard deviation of RMSE for training set: 		(1.70936, 0.19297)
+Mean and standard deviation of RMSE for testing set: 		(1.92880, 0.17899)
+Mean and standard deviation of cross validations: 		(0.91800, 0.01987)
